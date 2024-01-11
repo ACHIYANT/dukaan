@@ -1,6 +1,6 @@
 import TransactionButtons from "./TransactionButtons";
 import { useState } from "react";
-import sort from '../assets/sort.svg';
+import sort from '../assets/Sort.svg';
 import download from '../assets/download.svg';
 import SearchTransaction from "./SearchTransaction";
 import RowHeader from "./RowHeader";
