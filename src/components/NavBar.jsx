@@ -1,9 +1,9 @@
-import companyLogo from "../assets/nishyan.png";
-import chevronDown from "../assets/chevron.svg";
+import companyLogo from "/assets/nishyan.png";
+import chevronDown from "/assets/chevron.svg";
 import Pages from "./Pages";
 export default function NavBar() {
   return (
-    <section className=" text-white bg-secondary  h-[100vh] inline-flex flex-col items-start shrink-0">
+    <section className=" text-white bg-secondary  h-[100vh] inline-flex flex-col items-start shrink-0 fixed">
       <div className="flex flex-col w-[224px] py-4 px-2.5 flex-1 gap-4 items-center">
         <NavTop />
         <NavBottom />
@@ -42,7 +42,7 @@ function NavBottom() {
     <div className=" w-[192px] mx-auto bg-secondaryCredits py-1.5 px-3 rounded flex flex-col items-start gap-2.5">
       <div className="flex items-center gap-3">
         <span className="flex p-1.5 gap-2.5 rounded bg-[#FFFFFF1A] items-start">
-          <img src="/src/assets/wallet.png" alt="" className="h-6 w-6" />
+          <img src="/assets/wallet.png" alt="" className="h-6 w-6" />
         </span>
         <span className="flex flex-col gap-0.5 items-start">
           <span className="text-xsl leading-4 opacity-80 font-normal">

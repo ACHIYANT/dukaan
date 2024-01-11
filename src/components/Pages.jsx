@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Page from "./Page";
 const pagesData = [
     {
@@ -47,9 +48,14 @@ const pagesData = [
     },
 ]
 export default function Pages(){
+    const [active,setActive] = useState(7);
+    console.log(active);
+    function handleActive(id){
+        setActive(id);
+    }
     return(
         <div className="flex flex-col items-start gap-1 flex-1">
-            {pagesData.map((page)=><Page page={page} key={page.id}/>)}
+            {pagesData.map((page)=><Page page={page} key={page.id} active={active} handleActive={handleActive}/>)}
         </div>
     );
 }

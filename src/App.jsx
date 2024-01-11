@@ -5,7 +5,7 @@ import Main from "./components/Main"
 function App() {
   return <div className="flex flex-row items-start h-full relative">
     <NavBar/>
-    <div>
+    <div className="ml-[224px]">
         <Header/>
         <Main/>
     </div>

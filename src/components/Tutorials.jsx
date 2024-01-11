@@ -1,4 +1,4 @@
-import question from '../assets/question.svg';
+import question from '/assets/question.svg';
 export default function Tutorials() {
   return (
     <div className="flex items-center gap-4 flex-1">

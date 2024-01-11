@@ -1,7 +1,7 @@
 import TransactionButtons from "./TransactionButtons";
 import { useState } from "react";
-import sort from '../assets/Sort.svg';
-import download from '../assets/download.svg';
+import sort from '/assets/Sort.svg';
+import download from '/assets/download.svg';
 import SearchTransaction from "./SearchTransaction";
 import RowHeader from "./RowHeader";
 import DataDisplay from "./DataDisplay";
@@ -120,7 +120,8 @@ export default function Transactions(){
                         {rowHeader.map((header)=><RowHeader key={header.id} isLast={rowHeader.length == header.id} title={header.title}/>)}
                     </div>
                 </div>
-                {dataTable.map((data)=><DataDisplay key={data.orderId} data={data}/>)}
+                <div className="overflow-hidden">
+                {dataTable.map((data)=><DataDisplay key={data.orderId} data={data}/>)}</div>
             </div>
         </div>
     );

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import downArrow from "../assets/arrow.svg";
+import downArrow from "/assets/arrow.svg";
 
 export default function Dropdown({ listItems, defaultValue }) {
   const [isActive, setIsActive] = useState(false);

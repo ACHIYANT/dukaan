@@ -33,3 +33,7 @@ body::-webkit-scrollbar{
     --black60: #999999;
   }
 }
+.activePage{
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.10);
+}

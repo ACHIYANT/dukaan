@@ -1,7 +1,7 @@
-import question from "../assets/question.svg";
-import chevronRight from "../assets/chevronRight.svg";
-import chevronRightWhite from "../assets/chevron-right-white.svg";
-import helpWhite from "../assets/help-white.svg";
+import question from "/assets/question.svg";
+import chevronRight from "/assets/chevronRight.svg";
+import chevronRightWhite from "/assets/chevron-right-white.svg";
+import helpWhite from "/assets/help-white.svg";
 const currency = "INR";
 function currencyFormat(value) {
   return new Intl.NumberFormat("en", {
